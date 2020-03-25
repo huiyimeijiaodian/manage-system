@@ -32,7 +32,12 @@ export default [
       {
         path: "index",
         component: () => import("@/views/staff-mange/Index"),
-        meta: { title: "员工管理" }
+        meta: { title: "员工列表" }
+      },
+      {
+        path: "add",
+        component: () => import("@/views/staff-mange/Add"),
+        meta: { title: "添加员工" }
       }
     ]
   },
