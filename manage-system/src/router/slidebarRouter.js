@@ -1,5 +1,5 @@
 import Layout from '@/views/layout/Layout'
-const  slidebarRouter =  [
+export default [
   {
     path: "/",
     component: Layout,
@@ -122,5 +122,3 @@ const  slidebarRouter =  [
     ]
   },
 ];
-
-export default slidebarRouter;

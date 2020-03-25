@@ -6,8 +6,8 @@ import "element-ui/lib/theme-chalk/index.css";
 
 import App from "./App.vue";
 import router from "./router/router";
-import store from "./store";
 // import "./router/permission"; //路由判断权限
+import store from "./store";
 import service from "./service/index.js";
 import "./components/Icon/index.js";
 // import * as filters from './filters'
