@@ -1,4 +1,4 @@
-import server from './service.js';
+import server from './server.js';
 import qs from 'qs';
 import {Message} from 'element-ui'
 function myServer(){
@@ -13,7 +13,7 @@ myServer.prototype.parseRouter=function(urlOb){
 }
 myServer.prototype.sendRequest = function(name,item,data={}){
 	// 参数处理，健壮性
-  var type=(typeof item =='object'&&item.type=='get')?'get':'post';
+  var type=(typeof item =='object'&&item.type=='post')?'post':'get';
 	var url=typeof item =='object'?item.url:item;
 	console.log('request:',url,type);
 	var self = this;

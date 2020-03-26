@@ -1,5 +1,9 @@
 const helpRouter = [
   {
+    path: '/login',
+    component: () => import('@/views/login/Index'),
+  },
+  {
     path: '/adminauth/wait-audit',
     component: () => import('@/views/error-page/WaitAudit'),
   },
